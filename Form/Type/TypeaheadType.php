@@ -38,7 +38,7 @@ class TypeaheadType extends AbstractType
 
     public function buildForm(FormBuilderInterface $builder, array $options)
     {
-        // @todo I could combine the transformers below into a single class...
+        /*// @todo I could combine the transformers below into a single class...
         if ($options['multiple']) {
             $builder->addViewTransformer(new EntitiesToPropertyTransformer(
                 $options['em'] ?: $this->em,
@@ -49,7 +49,7 @@ class TypeaheadType extends AbstractType
                 $options['em'] ?: $this->em,
                 $options['class']
             ), true);
-        }
+        }*/
     }
 
     public function finishView(FormView $view, FormInterface $form, array $options)
